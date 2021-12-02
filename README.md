@@ -2,7 +2,7 @@
 
 ## Goal of this project
 
-The goal of this project is to work on my React and CSS skills.
+The goal of this project is to work on my React, CSS and MongoDB GraphQLskills.
 
 ## Versions
 
