@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Login.css';
+import Signup from './Signup';
 import { LOGIN_USER } from './utils/mutations';
 import {Button}  from '@material-ui/core';
 import { useMutation} from '@apollo/client';
@@ -67,6 +68,7 @@ function Login(props) {
             <Button type="submit">
                 Sign In
             </Button>
+              <a href={Signup}>Signup instead</a>
         </div>
     )
 }

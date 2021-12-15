@@ -35,7 +35,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <div className="app">
-      {!user ? (
+      {!client ? (
         <Login />
       ) : (
         <>
