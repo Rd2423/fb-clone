@@ -11,9 +11,11 @@ import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// import { Icon } from "@mui/material";
+import Login from './Login'
+import { Link } from "react-router-dom";
 
 function Header() {
+
   return (
     <div className="header">
       <div className="header_left">
@@ -63,6 +65,10 @@ function Header() {
           <ExpandMoreIcon />
         </IconButton>
       </div>
+      
+      <button className="login_header">
+        <Link to='/Login'>Login</Link>
+      </button>
     </div>
   );
 }

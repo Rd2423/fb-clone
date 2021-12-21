@@ -6,6 +6,7 @@ import Feed from "./Feed";
 import Widgets from "./Widgets";
 import { setContext } from "@apollo/client/link/context";
 import Login from "./Login";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   ApolloProvider,
   ApolloClient,
@@ -34,6 +35,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Router>
 
     <div className="app">
       {!client ? (
@@ -49,6 +51,7 @@ function App() {
         </>
       )}
     </div>
+    </Router>
     </ApolloProvider>
   );
 }
